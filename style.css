@@ -1,0 +1,17 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+button {
+	padding: 5px;
+}
+label {
+	font-weight: bold;
+}
+pre {
+	border: 1px solid gray;
+	padding: 10px;
+}
+footer {
+	float: right;
+	font-size: 0.8em;
+}
