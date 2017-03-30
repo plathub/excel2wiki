@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script converts a delimited text (tab, comma, semicolor) into a table with mediawiki markup.
+This script converts a delimited text (tab, comma, semicolon) into a table with mediawiki markup.
 The most common usage is likely to be copying cells from an Excel spreadsheet or CSV file
 and pasting the result into a mediawiki wiki, such as wikipedia.
 
