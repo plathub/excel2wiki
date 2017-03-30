@@ -1,3 +1,21 @@
+# Excel2Wiki Copy and Paste Wiki Converter
+
+## Overview
+
+This script converts a delimited text (tab, comma, semicolor) into a table with mediawiki markup.
+The most common usage is likely to be copying cells from an Excel spreadsheet or CSV file
+and pasting the result into a mediawiki wiki, such as wikipedia.
+
+## Installation
+
+Drop the file on a server running PHP.
+
+### Dependencies
+
+* [PHP](http://www.php.net/)
+
+## License
+
 The MIT License
 
 Copyright (c) 2011 Wyss Institute at Harvard University
@@ -21,27 +39,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 http://www.opensource.org/licenses/mit-license.php
-
-# Excel2Wiki Copy and Paste Wiki Converter
-
-## Overview
-
-This script converts a tab-delimited string into a table with mediawiki markup.
-The most common usage is likely to be copying cells from an Excel spreadsheet
-and pasting the result into a mediawiki wiki, such as wikipedia.
-
-There are two versions of the script, index.php which is includes the
-\{\{table\}\} template and wikipedia.php, which does not.
-
-## Installation
-
-Drop the file on a server running PHP.
-
-### Dependencies
-
-* [PHP](http://www.php.net/)
-
-## Links
-* [excel2wiki.net](http://excel2wiki.net/)
-* [shawndouglas.com](http://shawndouglas.com/)
-* [wikifarm](https://github.com/tomclegg/wikifarm)
