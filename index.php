@@ -33,7 +33,7 @@ echo "<html>
 <p>Copy &amp; paste CSV data or cells from Excel and click submit. Paste results into Wikipedia or similar Wiki.</p>
 <form action='index.php' method='post'>
   <textarea name='data' rows='20' cols='100'>$data</textarea><br/><br/>
-  <label for='delimiter'>Delimiter:
+  <label for='delimiter'>Delimiter
   <select id='delimiter' name='delimiter'>
   <option value='\t' selected>Tab (Excel)</option>
   <option value=';'>Semicolon</option>
@@ -41,10 +41,10 @@ echo "<html>
   <option value=' '>Space</option>
   </select>
   </label>
-  <label for='tableclass'>Wiki table style:
+  <label for='tableclass'>Wiki table style
   <select id='tableclass' name='tableclass'><option></option><option selected>wikitable</option><option>wikitable sortable</option></select>
   </label>
-  <input type='checkbox' name='header' checked='checked'>Format first row as header<br/><br/>
+  <label><input type='checkbox' name='header' checked='checked'>Format first row as header</label><br/><br/>
   <button>Convert Text to Wiki Markup</button>
 </form>";
 
@@ -66,12 +66,7 @@ if ($data != '')
 		$separator = ($index == 0 && $first_row_as_header) ? '!' : '|';
 		$line = str_replace($separator, "&lt;nowiki&gt;$separator&lt;/nowiki&gt;", $line);
 		$values = preg_split('/'.$delimiter.'/', $line);
-		$data = implode(" $separator$separator ", $values);
-		echo $separator .' '. $data;
-		if ($index < $n - 1) 
-		{
-			echo "|-\n";
-		}
+		echo $separator .' '. implode(" $separator$separator ", $values) . (($index < $n - 1) ? "|-\n" : '');
 	}
 	echo "\n|}</pre>";
 }
