@@ -14,6 +14,19 @@ Drop the file on a server running PHP.
 
 * [PHP](http://www.php.net/)
 
+### demo version
+
+please add a link or a screenshot
+
+### improvements
+
+please consider to add this PR: https://github.com/sdouglas/excel2wiki/pull/2
+
+### Collaboration
+
+To let users open issues, please change the settings for this repository, so I don't have to create a PR like this ;)
+
+
 ## License
 
 The MIT License
