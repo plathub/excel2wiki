@@ -8,11 +8,11 @@ and pasting the result into a mediawiki wiki, such as wikipedia.
 
 ## Installation
 
-Drop the file on a server running PHP.
+Drop the file on a web server running [PHP](http://www.php.net/).
 
-### Dependencies
+## Sample screenshot 
 
-* [PHP](http://www.php.net/)
+![Screenshot](/excel2wiki_sample.PNG?raw=true "excel2wiki Screenshot")
 
 ## License
 
